@@ -13,4 +13,5 @@ class Anagram
     #to see if they are the same, split each word to its characters and order them
     #if the characters are ordered the same as the instance variable, then it is an anagram
     array.select {|x| x.split("").sort == @word.split("").sort}
+  end
 end
