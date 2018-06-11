@@ -9,5 +9,6 @@ class Anagram
   
   def match(array)
     matched_word = nil
-    
+    #go through the array and select only elements that equal t
+    array.select {|x| x.split("").sort == @word.split("").sort}
 end
