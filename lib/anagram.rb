@@ -9,6 +9,10 @@ class Anagram
   
   def match(array)
     array.each do |word_array|
-      
+      if word_array.length == @word.length
+        if word_array.split("").sort == @word.split("").sort
+          true
+        end
+      end
   end
 end
